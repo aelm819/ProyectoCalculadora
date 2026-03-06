@@ -16,6 +16,15 @@ public class Calculadora {
     public int multiplicar() {
         return numero1 * numero2;
     }
+  
+
+    public double dividir() {
+        if (numero2 != 0) {
+            return (double) numero1 / numero2;
+        } else {
+            throw new ArithmeticException("No se puede dividir por cero");
+        }
+    }
 
      
 }
